@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Allow the user to set the window title.
+# usage: title "title string"
+
+#echo -ne \"\033]0;$1\007\"
+echo "\033]0;${1}\007\c"
+
